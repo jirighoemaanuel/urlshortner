@@ -27,7 +27,7 @@ SECRET_KEY = '_&!1x(sk+p-)!1fv#_%9*ishgrkca2w%h-)a4j*csqm0imoohr'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['shortnerurl.herokuapp.com']
 
 
 # Application definition
@@ -119,7 +119,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-django_heroku.settings(locals())
+# django_heroku.settings(locals())
 PROJECT_ROOT = os.path.join(os.path.abspath(__file__))
 prod_db = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update((prod_db))
